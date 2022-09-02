@@ -22,7 +22,7 @@
         &__dialog {
             width: 100%;
             max-width: 1220px;
-            background: #F2F2F2 url(../img/modal/bgSuccess.png) no-repeat center;
+            background: url(../img/modal/bgSuccess.png) no-repeat center;
             padding: 60px 140px;
             text-align: center;
         }
@@ -31,12 +31,13 @@
             font-style: normal;
             font-weight: 900;
             font-size: 44px;
-            color: #0C5CCB;
+            color: #1D3557;
             margin-bottom: 20px;
         }
         &__text {
             font-family: 'Montserrat', sans-serif;
             font-style: normal;
+            color: #0D0D0D;
             font-weight: 500;
             font-size: 24px;
             max-width: 466px;
@@ -68,8 +69,7 @@
             padding: 60px 20px 90px 100px;
             width: 100%;
             max-width: 1180px;
-            background: #FFFFFF url(../img/modal/bgMain.png) no-repeat right center;
-            background-size: contain;
+            background: #FFFFFF url(../img/modal/bgMain.png) no-repeat right 70px center;
             position: relative;
         }
         &__close {
@@ -86,6 +86,8 @@
             font-style: normal;
             font-weight: 500;
             font-size: 20px;
+            line-height: 24px;
+            color: #1D3557;
             text-align: center;
             margin-bottom: 20px;
         }
@@ -95,7 +97,7 @@
         }
         &__input {
             width: 100%;
-            border: 1px solid #E0E0E0;
+            border: 1px solid #A8DADC;
             border-radius: 5px;
             padding: 20px 24px;
             font-family: 'Montserrat', sans-serif;
@@ -106,12 +108,13 @@
             &:focus {
                 outline: none;
             }
+            &::placeholder {
+                color: #BDBDBD;
+            }
         }
         &__button {
             width: 100%;
             padding: 20px 0;
-            background-color: #1FA3E8;
-            border: 1px solid #1FA3E8;
         }
         &__img {
             display: none;
