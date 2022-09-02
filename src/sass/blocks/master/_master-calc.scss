@@ -1,0 +1,190 @@
+.master-calc {
+    padding-bottom: 125px;
+    background-color: #F1FAEE;
+    &__button {
+        width: 380px;
+        padding: 20px 0;
+    }
+    &__label {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        color: #0d0d0d;
+        font-weight: bold;
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+    &__input {
+        border: 1px solid #C4C4C4;
+        box-shadow: 0px 0px 1px #C4C4C4;
+        border-radius: 5px;
+        padding: 20px 32px 20px 20px;
+        width: 290px;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        &:focus {
+            outline: none;
+        }
+    }
+    &__input-group {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        position: relative;
+    }
+    &__rouble {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+    }
+    &__box {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    &__text-group {
+        margin-right: 20px;
+        &:last-child {
+            margin-right: 0;
+        }
+        &__title {
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+        }
+        &__text {
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 18px;
+            color: #457B9D;
+        }
+    }
+    &__result {
+        margin-bottom: 35px;
+    }
+    &__tab-content {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__container {
+        width: 1420px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        padding: 49px 20px;
+        &>.active {
+            display: flex;
+            animation: fadeIn 0.3s;
+        }
+    }
+    &__tabs {
+        padding-left: 90px;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-bottom: 60px;
+        & .active {
+            background-color: #1D3557;;
+            color: #ffffff;
+            font-weight: 700;
+        }
+        &__item {
+            box-shadow: 0px 0px 1px #C4C4C4;
+            border-radius: 5px;
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 20px;
+            padding: 8px 14px;
+            border: 1px solid #457B9D;
+            cursor: pointer;
+            transition: 0.3s;
+            margin: 10px;
+        }
+    }
+    &__invalide {
+        position: absolute;
+        color: tomato;
+        bottom: -25px;
+        left: 0;
+        font-size: 12px;
+        text-align: center;
+        line-height: 1;
+    }
+}   
+
+.select {
+    background-color: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 20px;
+    padding-right: 26px;
+    position: relative;
+    transition: 0.3s;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    width: 290px;
+}
+.select--active {
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid transparent;
+}
+.select--active .select__content {
+    border: 1px solid #C4C4C4;
+    border-top: none;
+}
+.select--active .select__arrow {
+    transform: translateY(-50%) rotate(180deg);
+}
+.select__arrow {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s;
+}
+.select__content {
+    position: absolute;
+    width: calc( 100% + 2px );
+    left: -1px;
+    top: 100%;
+    background-color: #FFFFFF;
+    border-radius: 0 0 5px 5px;
+    height: auto;
+    max-height: 0px;
+    overflow: auto;
+    border: 0px;
+    transition: 0.3s;
+    z-index: 199;
+    & .active {
+       background-image: url(../img/master-calc/ok.png);
+    }
+}
+.select__option {
+    transition: 0.3s;
+    border-bottom: 1px solid #C4C4C4;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-position: calc( 100% - 8px ) center;
+} 
+.select__option:first-child {
+    border-top: 1px solid #C4C4C4;
+}
+.select__option:last-child {
+    border-bottom: none;
+}
+.select__option:hover {
+    background-color: #eaeaea;
+}

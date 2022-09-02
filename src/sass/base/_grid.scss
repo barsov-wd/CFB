@@ -1,0 +1,25 @@
+.section {
+    max-width: 1920px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    &__title {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 44px;
+        line-height: 1.1;
+        text-align: left;
+    }
+}
+
+.container {
+    max-width: 1600px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

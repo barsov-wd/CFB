@@ -1,0 +1,23 @@
+.reviews {
+    background-color: #F1FAEE;
+    padding-bottom: 197px;
+    &__title {
+        margin-bottom: 20px;
+        color: #0D0D0D;
+        font-size: 20px;
+        line-height: 24px;
+        font-family: 'Montserrat Bold', sans-serif;
+    }
+    &__descr {
+        max-width: 1420px;
+        width: 100%;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        color: #0d0d0d;
+        margin-bottom: 10px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

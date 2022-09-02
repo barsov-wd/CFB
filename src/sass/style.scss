@@ -1,8 +1,20 @@
-@import 'libs/bootstrap-reboot.min';
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
 
-* {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-}
+@import 'base/grid';
+@import 'base/animation';
+@import 'base/settings';
+
+
+@import 'libs/fonts';
+
+
+@import 'blocks/header';
+@import 'blocks/main';
+@import 'blocks/offer';
+@import 'blocks/reviews';
+@import 'blocks/footer';
+@import 'blocks/buttons';
+@import 'blocks/modal';
+@import 'blocks/master/master-calc';
+@import 'blocks/master/master-main';
+@import 'blocks/master/master-work';
+@import 'blocks/media';
